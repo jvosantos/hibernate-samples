@@ -12,6 +12,9 @@
         <!-- SQL dialect -->
         <property name="dialect">org.hibernate.dialect.MySQLDialect</property>
 
+        <!-- Echo all executed SQL to stdout -->
+        <property name="show_sql">true</property>
+        
         <!-- Use XML-based mapping metadata -->
         <mapping resource="com/jvosantos/hibernate/samples/xml/helloworld/entities/Message.hbm.xml"/>
 
