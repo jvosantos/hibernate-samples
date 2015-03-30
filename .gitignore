@@ -114,3 +114,5 @@ crashlytics-build.properties
 /XML-HelloWorld/target/
 /Annotation-DirtyBit/target/
 /XML-DirtyBit/target/
+/Annotation-Component/target/
+/XML-Component/target/

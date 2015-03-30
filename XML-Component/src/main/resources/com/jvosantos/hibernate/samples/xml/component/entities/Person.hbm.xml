@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+ "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+ "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.jvosantos.hibernate.samples.xml.component.entities">
+    <class name="Person" table="person">
+        <id name="id" column="id">
+            <generator class="native" />
+        </id>
+        <property name="name" type="string" column="name" unique="true" not-null="true"/>
+        <component name="homeAddress" class="com.jvosantos.hibernate.samples.xml.component.entities.Address">
+            <property name="street" type="string" column="home_street"/>
+            <property name="city" type="string" column="home_city"/>
+            <property name="zipcode" type="string" column="home_zipcode"/>
+        </component>
+        <component name="billingAddress" class="com.jvosantos.hibernate.samples.xml.component.entities.Address">
+            <property name="street" type="string" column="billing_street"/>
+            <property name="city" type="string" column="billing_city"/>
+            <property name="zipcode" type="string" column="billing_zipcode"/>
+        </component>
+    </class>
+</hibernate-mapping>
