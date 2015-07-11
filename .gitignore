@@ -116,3 +116,5 @@ crashlytics-build.properties
 /XML-DirtyBit/target/
 /Annotation-Component/target/
 /XML-Component/target/
+/XML-Mapping-ManyToOne/target/
+/Annotation-Mapping-ManyToOne/target/
